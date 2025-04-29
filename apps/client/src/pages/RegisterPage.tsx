@@ -56,8 +56,9 @@ function RegisterPage({ onRegisterSuccess }: RegisterPageProps) {
       email: email.trim(),
       password: password,
     };
+    const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000/api';
+    const REGISTER_API_URL = `${API_BASE_URL}/register/`;
 
-    const REGISTER_API_URL = 'http://127.0.0.1:8000/api/users/register/';
 
     try {
       const response = await fetch(REGISTER_API_URL, {

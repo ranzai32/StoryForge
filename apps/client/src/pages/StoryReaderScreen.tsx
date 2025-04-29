@@ -32,7 +32,7 @@ interface PassageStep {
 }
 
 const NICKNAME_STORAGE_KEY = 'storyforge_nickname';
-const API_BASE_URL = 'http://127.0.0.1:8000/api';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 const STORY_DETAIL_API_URL_BASE = `${API_BASE_URL}/browse-stories/`;
 const CHAPTERS_API_URL = `${API_BASE_URL}/chapters/`;
 const ACTIONS_API_URL = `${API_BASE_URL}/actions/`;

@@ -15,7 +15,9 @@ import './App.css';
 
 const ACCESS_TOKEN_KEY = 'storyforge_access_token';
 const REFRESH_TOKEN_KEY = 'storyforge_refresh_token';
-const USER_API_URL = 'http://127.0.0.1:8000/api/users/me/';
+
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000/api';
+const USER_API_URL =  `${API_BASE_URL}/users/me/`;
 
 interface UserData {
   id: number;
@@ -26,7 +28,7 @@ interface UserData {
 function ProtectedLayout({ isAuthenticated, onLogout, children }: { isAuthenticated: boolean, onLogout: () => void, children: React.ReactNode }) {
   const [currentUserForHeader, setCurrentUserForHeader] = useState<UserData | null>(null);
   const [isUserDataLoading, setIsUserDataLoading] = useState(true);
-  const REFRESH_API_URL = 'http://127.0.0.1:8000/api/token/refresh/';
+  const REFRESH_API_URL = `${API_BASE_URL}/token/refresh/`;
 
   const fetchUserWithRefresh = useCallback(async (initialToken: string | null) => {
       const token = initialToken || localStorage.getItem(ACCESS_TOKEN_KEY);

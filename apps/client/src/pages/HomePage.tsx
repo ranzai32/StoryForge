@@ -12,7 +12,9 @@ interface StoryBrowseSummary {
   updated_at: string;
 }
 
-const BROWSE_API_URL = 'http://127.0.0.1:8000/api/browse-stories/';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000/api';
+
+const BROWSE_API_URL = `${API_BASE_URL}/browse-stories/`;
 
 const genres = [
   "Фэнтези",

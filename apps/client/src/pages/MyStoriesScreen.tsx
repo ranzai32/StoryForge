@@ -12,8 +12,9 @@ interface StorySummary {
 }
 
 const ACCESS_TOKEN_KEY = 'storyforge_access_token';
-const MY_STORIES_API_URL = 'http://127.0.0.1:8000/api/stories/';
-const STORIES_API_URL_BASE = 'http://127.0.0.1:8000/api/stories/';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+const MY_STORIES_API_URL = `${API_BASE_URL}$/stories/`;
+const STORIES_API_URL_BASE = `${API_BASE_URL}$/api/stories/`;
 
 function MyStoriesScreen() {
   const [stories, setStories] = useState<StorySummary[]>([]);

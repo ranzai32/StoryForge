@@ -2,7 +2,7 @@
 
 ## Video Demo
 
-    **https://youtu.be/I4ycLe-JMDQ**
+    https://youtu.be/I4ycLe-JMDQ
 
 ## Краткое описание проекта
 

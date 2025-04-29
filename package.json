@@ -1,0 +1,24 @@
+{
+  "name": "nfac-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:client": "pnpm --filter client dev",
+    "dev:api": "echo \"API development server not set up yet. Use 'vercel dev' later.\"",
+    "dev": "concurrently \"pnpm run dev:client\" \"pnpm run dev:api\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.9.0",
+  "devDependencies": {
+    "@types/react-slick": "^0.23.13",
+    "concurrently": "^9.1.2"
+  },
+  "dependencies": {
+    "react-slick": "^0.30.3",
+    "slick-carousel": "^1.8.1"
+  }
+}

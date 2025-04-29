@@ -1,0 +1,142 @@
+.story-reader-screen {
+    padding: 20px;
+    max-width: 800px;  
+    margin: 20px auto;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    border: 1px solid #444;
+  }
+  
+  .story-reader-loading,
+  .story-reader-error {
+    text-align: center;
+    padding: 50px;
+    color: #aaa;
+  }
+  .story-reader-error {
+    color: #ff8888;
+  }
+  
+  .story-title {
+    text-align: center;
+    color: #eee;
+    margin-bottom: 15px;
+  }
+  
+  .chapter-title {
+    color: #ddd;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+  }
+  
+  .chapter-content p {
+    line-height: 1.6;
+    margin-bottom: 1em;
+    color: #ccc;
+  }
+  
+  .chapter-actions {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+  }
+  
+  .chapter-actions h3 {
+    margin-bottom: 15px;
+    color: #ddd;
+  }
+  
+  .chapter-actions .action-button {
+    display: block;  
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    text-align: left;  
+    background-color: #3a3a3a;
+    color: rgba(255, 255, 255, 0.87);
+    border: 1px solid #555;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s, border-color 0.2s;
+  }
+  
+  .chapter-actions .action-button:hover {
+    background-color: #4a4a4a;
+    border-color: #777;
+  }
+  
+  .story-end {
+      text-align: center;
+      padding: 40px 0;
+  }
+  .story-end h2 {
+      color: #eee;
+      margin-bottom: 20px;
+  }
+  .story-end a {
+      color: #8c9eff;
+  }
+
+  .passage-summary {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #2a2a2a;
+    border-radius: 4px;
+    border: 1px solid #444;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+.passage-share {
+    margin-top: 25px;
+}
+
+ 
+.passage-share button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #4caf50; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.25s;
+    margin-bottom: 15px;  
+}
+.passage-share button:hover {
+    background-color: #45a049;
+}
+.passage-share button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+ 
+.passage-share .error-message {
+    color: #ff8888;  
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+ 
+.passage-share div {
+  margin-top: 15px;
+}
+.passage-share div p {
+    margin-bottom: 8px;
+    color: #ccc;
+}
+
+ 
+.share-link-input {
+    width: 80%;  
+    max-width: 400px;
+    padding: 8px 10px;
+    background-color: #333;
+    color: #eee;
+    border: 1px solid #555;
+    border-radius: 4px;
+    text-align: center;
+    font-family: monospace;  
+}

@@ -1,0 +1,23 @@
+.help-page {
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: rgba(255, 255, 255, 0.87);
+    max-width: 960px;
+    margin: 20px auto;
+  }
+  
+  .help-page h1 {
+    color: #fff;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+  }
+  
+  .help-page h2 {
+    color: #ccc;
+    margin-top: 20px;
+  }
+  
+  .help-page ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }

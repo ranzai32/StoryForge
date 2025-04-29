@@ -1,0 +1,65 @@
+.story-actions {
+  display: flex;
+  flex-direction: column;   
+  align-items: flex-end;    
+  gap: 10px;                
+  flex-shrink: 0;
+  margin-top: -120px;
+}
+
+.story-actions .edit-link,
+.story-actions .delete-button {
+  display: inline-block;
+  padding: 10px 15px;
+  text-align: center;
+  min-width: 100px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  text-decoration: none;
+}
+
+.story-actions .edit-link {
+  background-color: #646cff;
+  color: white;
+}
+
+.story-actions .edit-link:hover {
+  background-color: #535bf2;
+}
+
+.story-actions .delete-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.story-actions .delete-button:hover {
+  background-color: #c82333;
+}
+
+.story-actions .delete-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.add-new-story-link {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.add-new-story-link a {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #3a3a3a;
+  color: #eee;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid #555;
+}
+
+.add-new-story-link a:hover {
+  background-color: #4a4a4a;
+  border-color: #777;
+}

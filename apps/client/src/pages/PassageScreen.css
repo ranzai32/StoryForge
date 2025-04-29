@@ -1,0 +1,119 @@
+.passage-loading,
+.passage-error {
+  text-align: center;
+  padding: 50px;
+  color: #aaa;
+  min-height: 200px;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.passage-error {
+  color: #ff8888;
+}
+.passage-error a,
+.passage-loading a {
+    color: #8c9eff;
+    margin-top: 15px;
+}
+
+.passage-screen {
+  padding: 30px 20px;  
+  max-width: 800px;
+  margin: 40px auto;  
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #1e1e1e; 
+  border-radius: 8px;
+  border: 1px solid #444;
+  text-align: center;  
+}
+
+.passage-screen h1 {
+  color: #eee;
+  margin-bottom: 30px;  
+  font-size: 2em;  
+  border-bottom: 1px solid #444;
+  padding-bottom: 15px;
+}
+
+.passage-details {
+  margin-bottom: 30px;
+  line-height: 1.7;  
+  font-size: 1.1em;  
+  color: #ccc;
+}
+
+.passage-details strong {
+  color: #eee;  
+  font-weight: 600;
+}
+ 
+.passage-details pre {
+    background-color: #2a2a2a;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    text-align: left;
+    white-space: pre-wrap;  
+    word-wrap: break-word;  
+    max-height: 200px;  
+    overflow-y: auto;  
+    font-size: 0.85em;
+    margin-top: 15px;
+}
+
+.passage-actions {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  gap: 20px;  
+}
+
+.passage-actions a {
+  color: #8c9eff;  
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  background-color: #3a3a3a;
+  border: 1px solid #555;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.passage-actions a:hover {
+  background-color: #4a4a4a;
+  border-color: #777;
+  text-decoration: none;
+}
+
+.final-chapter {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px dashed #555; /* Отделим концовку */
+}
+
+.final-chapter h3 {
+    color: #ddd;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.final-chapter-content {
+    text-align: left; 
+    background-color: #2a2a2a;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #444;
+}
+
+.final-chapter-content p {
+    line-height: 1.6;
+    margin-bottom: 1em;
+    color: #ccc;
+}
+.final-chapter-content p:last-child {
+    margin-bottom: 0;
+}

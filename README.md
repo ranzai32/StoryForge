@@ -55,6 +55,8 @@ StoryForge — это веб-приложение для создания, ре�
     python manage.py runserver
 
 6. **Для фронтенда**
+    
+    ```bash
     npm install
     npm start
 

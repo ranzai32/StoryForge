@@ -9,7 +9,7 @@ class ActionSerializer(serializers.ModelSerializer):
 class ChapterSerializer(serializers.ModelSerializer):
     class Meta:
         model = Chapter
-        fields = ['id', 'title', 'content', 'story', 'illustration'] 
+        fields = ['id', 'title', 'content', 'story'] 
 
 class CharacterSerializer(serializers.ModelSerializer):
     class Meta:
@@ -28,7 +28,6 @@ class StorySerializer(serializers.ModelSerializer):
             'genre',
             'author',
             'author_nickname',
-            'cover_image',
             'created_at',
             'updated_at',
         ]

@@ -95,4 +95,4 @@ class PublicStoryViewSet(viewsets.ReadOnlyModelViewSet):
 
         
 
-        return queryset.order_by('-updated_at') 
+        return queryset.order_by('-updated_at')

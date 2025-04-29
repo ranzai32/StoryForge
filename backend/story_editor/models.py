@@ -10,11 +10,6 @@ class Story(models.Model):
         on_delete=models.CASCADE,
         related_name='stories'
     )
-    cover_image = models.ImageField(
-        upload_to='story_covers/',  
-        null=True,    
-        blank=True    
-    )
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -28,11 +23,6 @@ class Character(models.Model):
         Story,
         on_delete=models.CASCADE,
         related_name='characters'
-    )
-    illustration = models.ImageField(
-        upload_to='chapter_illustrations/',  
-        null=True,
-        blank=True
     )
 
     def __str__(self):

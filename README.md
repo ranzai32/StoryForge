@@ -4,7 +4,7 @@
 
     https://youtu.be/I4ycLe-JMDQ
 
-## Public URL
+## Public URL (ВАЖНО❗❗❗ Пожалуйста подождите 1-2 минуты прежде чем начать пользоваться продом, render'у нужно время чтобы проснуться❗❗❗)
 
     https://storyforge-d5g7.onrender.com
 
